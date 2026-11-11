@@ -1,0 +1,22 @@
+{
+  "info": { "name": "SIMS API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "variable": [
+    { "key": "base_url", "value": "http://127.0.0.1:8000/api" },
+    { "key": "token", "value": "" }
+  ],
+  "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}", "type": "string" }] },
+  "item": [
+    { "name": "Login", "request": { "method": "POST", "auth": { "type": "noauth" }, "header": [{ "key": "Accept", "value": "application/json" }],
+      "body": { "mode": "urlencoded", "urlencoded": [{ "key": "email", "value": "admin@sims.test" }, { "key": "password", "value": "password" }] },
+      "url": "{{base_url}}/login" } },
+    { "name": "List students", "request": { "method": "GET", "header": [{ "key": "Accept", "value": "application/json" }], "url": "{{base_url}}/students" } },
+    { "name": "Get student", "request": { "method": "GET", "header": [{ "key": "Accept", "value": "application/json" }], "url": "{{base_url}}/students/1" } },
+    { "name": "Create student", "request": { "method": "POST", "header": [{ "key": "Accept", "value": "application/json" }, { "key": "Content-Type", "value": "application/json" }],
+      "body": { "mode": "raw", "raw": "{\n  \"student_number\": \"2026-9001\",\n  \"first_name\": \"Mark\",\n  \"last_name\": \"Lopez\",\n  \"email\": \"mark.lopez@school.test\",\n  \"course\": \"BSIT\",\n  \"year_level\": 1\n}" },
+      "url": "{{base_url}}/students" } },
+    { "name": "Update student", "request": { "method": "PUT", "header": [{ "key": "Accept", "value": "application/json" }, { "key": "Content-Type", "value": "application/json" }],
+      "body": { "mode": "raw", "raw": "{\n  \"student_number\": \"2026-9001\",\n  \"first_name\": \"Mark\",\n  \"last_name\": \"Lopez\",\n  \"email\": \"mark.lopez@school.test\",\n  \"course\": \"BSCS\",\n  \"year_level\": 2\n}" },
+      "url": "{{base_url}}/students/1" } },
+    { "name": "Delete student (admin)", "request": { "method": "DELETE", "header": [{ "key": "Accept", "value": "application/json" }], "url": "{{base_url}}/students/1" } }
+  ]
+}
