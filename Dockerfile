@@ -37,4 +37,4 @@ ENV APP_ENV=production \
 VOLUME ["/var/lib/sims"]
 EXPOSE 80
 
-CMD ["apache2-foreground"]
+CMD ["sh", "-c", "mkdir -p /var/lib/sims && touch /var/lib/sims/database.sqlite && chown -R www-data:www-data /var/lib/sims && php artisan migrate --force && exec apache2-foreground"]
