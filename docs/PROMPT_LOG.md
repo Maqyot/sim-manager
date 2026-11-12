@@ -183,3 +183,30 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Debug prompt:** `SQLSTATE[HY000]: General error: 1 no such table: events` from Wasmer stderr.
 - **Result:** Added a schema check to admin and student dashboard event queries, returning an empty event list when the table is absent; configured the Wasmer Composer build hook to run migrations with `--force`.
 - **Screenshot:** Not captured; Wasmer deployment v10 is active. Authenticated browser verification was interrupted by the computer-use safety policy.
+
+## Feature entry: Project AI workflow and agent design
+
+- **Date / tool / model:** 2026-11-12 / Codex desktop / GPT-6
+- **Feature:** Repeatable AI-assisted development workflow for SIMS
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** “make me the ai workflow”
+- **What was wrong with the result:** Existing workflow notes were brief, some role/context sections were placeholders, and the project needed a clear distinction between its agent-role design and agents actually used historically.
+- **Refined prompt:** None.
+- **Validation prompt:** None.
+- **Debug prompt:** None.
+- **Result:** Expanded `docs/WORKFLOW.md` with a plan/build/review/verify/document/Git sequence and prompt templates; completed `docs/agent-design.md` with role boundaries and handoffs; replaced placeholder questions in `docs/CONTEXT_STRATEGY.md` with a concrete strategy and honest reflection guidance. The documents explicitly state that historical prompt entries record a primary assistant and no subagents, so the designed workflow is not presented as a past multi-agent run.
+- **Validation:** `git diff --check`; documentation review. Runtime tests were not relevant to these documentation-only edits and were not run.
+- **Screenshot:** Not captured.
+## Feature entry: Final report PDF drafts
+
+- **Date / tool / model:** 2026-11-12 / Codex desktop / GPT-6
+- **Feature:** Named AI portfolio, agent design, and reflection report drafts
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** “can you produce me those requirements? again, and my name is Marcuel L. Gubaynon”
+- **What was wrong with the result:** The assignment asked for three report PDFs, while the repository only had Markdown drafts and incomplete personal evidence.
+- **Refined prompt:** None.
+- **Validation prompt:** None.
+- **Debug prompt:** None.
+- **Result:** Added the student's provided name to all three report sources, exported `docs/ai-portfolio.pdf`, `docs/agent-design.pdf`, and `docs/reflection.pdf`, and marked absent screenshots and student-specific reflection details as remaining work. The reports do not claim separate AI agents or an AI comparison study that the logs do not evidence.
+- **Validation:** `pdfinfo` confirmed A4 page dimensions and page counts (3, 2, and 2); first pages were rendered and visually reviewed. No application tests were relevant or run.
+- **Screenshot:** Not captured.

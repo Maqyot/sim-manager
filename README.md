@@ -132,8 +132,12 @@ database/                 migrations, factories, seeder, SQL export
 tests/Feature             feature tests
 ```
 
+## Assignment rubric review
+
+See [the rubric crosswalk](docs/RUBRIC_CHECKLIST.md) for requirement evidence, submission gaps, and final demonstration reminders. It distinguishes implemented code from work that still needs your own screenshots, reflection, or verification.
+
 ## AI-assisted development files
-`AGENTS.md`, `agents/` and `docs/` hold the context file, agent role prompts, workflow, prompt log, verification log, context strategy and decision notes used for `ai-portfolio.pdf`, `agent-design.pdf` and `reflection.pdf`.
+`AGENTS.md`, `agents/` and `docs/` hold the context file, agent role prompts, workflow, prompt log, verification log, context strategy and decision notes. Draft report PDFs and their editable Markdown sources are in `docs/ai-portfolio.pdf`, `docs/agent-design.pdf`, and `docs/reflection.pdf`.
 
 ## Screenshots
 Add screenshots of login, dashboard, students (with a validation error), enrollments and a Postman request here.

@@ -1,0 +1,123 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [6 0 R 8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 5360 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  Reflection Report) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.08 0.27 0.43 rg BT /F2 22 Tf 1 0 0 1 52 756 Tm (Reflection Report -- SIMS) Tj ET Q
+q 0.18 0.62 0.68 RG 2 w 52 730 m 543 730 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 711 Tm (Student: Marcuel L. Gubaynon) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 691.516 Tm (Course: Laravel Web Development) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 672.032 Tm (Project: Student Information Management System) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 652.548 Tm (Prepared: 12 November 2026) Tj ET Q
+q 0.91 0.96 0.97 rg 52 603.652 491 38.412 re f Q
+q 0.18 0.62 0.68 RG 3 w 52 641.064 m 52 606.652 l S Q
+q 0.14 0.19 0.25 rg BT /F2 9.3 Tf 1 0 0 1 61 633.064 Tm (Draft based on the project's prompt and verification logs. Review it, add your personal experience) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F2 9.3 Tf 1 0 0 1 61 619.858 Tm (where marked, and confirm each statement before submitting.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 585.652 Tm (1. AI tools and prompt strategy) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 565.652 Tm (The project records use of the Copilot SDK in Visual Studio Code, with the model not recorded) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 551.168 Tm (for most entries, and Codex desktop with GPT-6 for later work. I used short requests to identify) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 536.684 Tm (a feature, then clarified behavior when the first request left important details open. For) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 522.2 Tm (example, the dashboard design request was narrowed to existing SIMS routes and real data. The) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 507.716 Tm (subject schedule request was clarified to include weekdays and a start/end time, with validation) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 493.232 Tm (for incomplete schedules.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 473.748 Tm (Personal detail to add: Why did I choose these tools? Which one helped me most, and what) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 459.264 Tm (limitation did I notice?) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 427.78 Tm (2. Agent strategy) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 407.78 Tm (The repository has role prompts for planning, database work, Laravel implementation, testing,) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 393.296 Tm (review, and documentation. The project history generally records a primary assistant and no) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 378.812 Tm (subagents. The role architecture is useful for dividing a large future change and assigning) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 364.328 Tm (clear handoffs, but I should not claim that a multi-agent workflow was executed when the records) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 349.844 Tm (do not show one.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 330.36 Tm (Personal detail to add: Which role would have saved me the most effort? Which roles were not) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 315.876 Tm (necessary for a small change?) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 284.392 Tm (3. What worked) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 264.392 Tm (Breaking work into features made it possible to refine requirements without replacing the whole) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 249.908 Tm (app. The project records show tests being added for access boundaries, validation, student data) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 235.424 Tm (isolation, and CRUD behavior. A useful example of critical review was the student timeline: the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 220.94 Tm (system had enrollment and class-schedule data, but no attendance or quiz records, so the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 206.456 Tm (implementation used data the app actually stored instead of displaying invented activity.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 174.972 Tm (4. What failed and how it was corrected) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 154.972 Tm (A production dashboard request failed because the Wasmer SQLite database did not have an events) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 140.488 Tm (table. The recorded error was SQLSTATE[HY000]: General error: 1 no such table: events. The) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 126.004 Tm (correction added a schema check around dashboard event queries and configured migrations in the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 111.52 Tm (build flow. The recorded checks showed /login returning 200, /up returning 200, and) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 97.036 Tm (unauthenticated /dashboard redirecting with 302. The authenticated dashboard was not verified) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 82.552 Tm (after the last deployment, so that check remains open.) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  1 / 2) Tj ET Q
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4033 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  Reflection Report) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 774 Tm (Another iteration involved student login. A forced password-change screen did not match the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 759.516 Tm (requested experience; it was removed and a regression assertion was recorded for direct) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 745.032 Tm (dashboard access. That history is a reminder to confirm the intended user flow before expanding) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 730.548 Tm (a feature.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 699.064 Tm (5. AI output verification and human judgment) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 679.064 Tm (AI suggestions were checked against existing routes, stored data, role boundaries, tests, and) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 664.58 Tm (real deployment errors. The prompt log records corrections such as using api. route-name) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 650.096 Tm (prefixes to avoid a web/API naming collision and avoiding reference-page fields that SIMS does) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 635.612 Tm (not store. I should rerun the current test suite and manually demonstrate the final app before) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 621.128 Tm (treating historical test results as current evidence.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 589.644 Tm (6. Challenges and lessons learned) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 569.644 Tm (The main challenge recorded in this project was that local and deployed environments can differ:) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 555.16 Tm (a local migration can be complete while the deployed SQLite package still lacks a newer table.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 540.676 Tm (Exact production error logs helped narrow that problem. Another lesson is that a polished) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 526.192 Tm (interface must still use real project data and preserve role checks.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 506.708 Tm (Personal detail to add: What was the hardest part for me? What did I learn while explaining or) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 492.224 Tm (debugging it?) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 460.74 Tm (7. What I would improve with two more weeks) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 440.74 Tm (I would capture the required screenshots, finish and export the portfolio reports, rerun the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 426.256 Tm (full feature suite, manually verify admin/staff/student access, and confirm the authenticated) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 411.772 Tm (deployed dashboard and Postman API flow. I would also use the documented specialized roles on a) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 397.288 Tm (future feature and record each real handoff if the tools support it.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 365.804 Tm (Final student review) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 345.804 Tm (Before submitting, replace the marked personal-detail prompts with your own experience, verify) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 331.32 Tm (the tool/model details, add genuine screenshots to the portfolio, and update the verification) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 316.836 Tm (log with checks you personally rerun. This draft intentionally does not claim unrecorded agent) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 302.352 Tm (runs, screenshots, AI comparisons, or deployment verification.) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  2 / 2) Tj ET Q
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Reflection Report) /Author (Marcuel L. Gubaynon) /Subject (SIMS final project report) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000005738 00000 n 
+0000005880 00000 n 
+0000009965 00000 n 
+0000010107 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+10222
+%%EOF

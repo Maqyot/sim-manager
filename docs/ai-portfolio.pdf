@@ -1,0 +1,154 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 3 /Kids [6 0 R 8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 4999 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  AI Engineering Portfolio) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.08 0.27 0.43 rg BT /F2 22 Tf 1 0 0 1 52 756 Tm (AI Engineering Portfolio -- SIMS) Tj ET Q
+q 0.18 0.62 0.68 RG 2 w 52 730 m 543 730 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 711 Tm (Student: Marcuel L. Gubaynon) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 691.516 Tm (Course: Laravel Web Development) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 672.032 Tm (Project: Student Information Management System) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 652.548 Tm (Prepared: 12 November 2026) Tj ET Q
+q 0.91 0.96 0.97 rg 52 603.652 491 38.412 re f Q
+q 0.18 0.62 0.68 RG 3 w 52 641.064 m 52 606.652 l S Q
+q 0.14 0.19 0.25 rg BT /F2 9.3 Tf 1 0 0 1 61 633.064 Tm (Draft based on the project prompt and verification logs. Add your own screenshots and complete the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F2 9.3 Tf 1 0 0 1 61 619.858 Tm (marked personal details before submitting this report as final.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 585.652 Tm (1. AI platforms recorded) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 565.652 Tm (Platform | Model recorded | Project use evidenced in the logs | Personal selection reason) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 548.582 Tm (GitHub Copilot SDK in Visual Studio Code | Not recorded in the historical entries | Iterative implementation) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 536.512 Tm (of dashboard, student, subject, enrollment, schedule, authentication, and messaging features | Student to) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 524.442 Tm (complete: explain why you chose this tool and what worked well for you.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 507.372 Tm (Codex desktop | GPT-6 in the 12 November entries | Events and sessions, Wasmer production debugging, rubric) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 495.302 Tm (review, and workflow documentation | Student to complete: explain why you chose this tool and what worked well) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 483.232 Tm (for you.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 466.162 Tm (The project log does not record a comparison run across ChatGPT, Claude, Gemini, and Copilot. No) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 451.678 Tm (comparison claim is made here.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 420.194 Tm (2. Representative prompt history) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 400.194 Tm (The quotations below are copied from the project prompt log. The refined prompts are summaries) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 385.71 Tm (when the exact follow-up wording was not recorded.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 11.5 Tf 1 0 0 1 52 358.226 Tm (Dashboard and directory design) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 341.726 Tm (- Initial prompt: "can you copy some of the menu of this site?) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 327.242 Tm (https://preskool.dreamstechnologies.com/html/index.html into my project") Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 307.758 Tm (- Refinement recorded: Use a responsive sidebar for the existing Dashboard, Students, Subjects,) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 293.274 Tm (and Enrollments routes.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 273.79 Tm (- Decision: Keep the project's own Bootstrap styling and real records; do not copy the reference) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 259.306 Tm (site's assets or add unrelated menu destinations.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 239.822 Tm (- Verification recorded: Focused auth test and feature coverage. The log says the manual) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 225.338 Tm (responsive browser check remained to be done.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 11.5 Tf 1 0 0 1 52 197.854 Tm (Subject schedule) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 181.354 Tm (- Initial prompt: "for subject also can you add the time? also update the database") Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 161.87 Tm (- Refinement recorded: Store meeting weekdays and a start/end time range; require a complete) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 147.386 Tm (schedule when any schedule field is entered.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 127.902 Tm (- Verification recorded: Migration/status checks and feature cases for creating, invalidating,) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 113.418 Tm (updating, and clearing a schedule.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 11.5 Tf 1 0 0 1 52 85.934 Tm (School events and sessions) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  1 / 3) Tj ET Q
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 5655 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  AI Engineering Portfolio) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 774 Tm (- Initial prompt: Request for dashboard ideas including events, classes, and sessions.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 754.516 Tm (- Refinement/decision recorded: Add event management and show sessions grouped from existing) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 740.032 Tm (school-year/semester enrollment values rather than duplicating term data.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 720.548 Tm (- Verification recorded: Migration applied; 50 tests and 267 assertions passed according to the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 706.064 Tm (project log. Manual browser review remained outstanding.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 11.5 Tf 1 0 0 1 52 678.58 Tm (Wasmer dashboard production error) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 662.08 Tm (- Debug evidence: The project log records SQLSTATE[HY000]: General error: 1 no such table:) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 647.596 Tm (events from Wasmer stderr.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 628.112 Tm (- User refinement: The user provided the admin login to reproduce the signed-in failure.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 608.628 Tm (- Correction recorded: Guard dashboard event queries when the table is absent and configure) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 594.144 Tm (migrations in the Wasmer build flow.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 574.66 Tm (- Verification recorded: PHP lint passed; /login returned 200, /up returned 200, and) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 560.176 Tm (unauthenticated /dashboard returned 302. Authenticated dashboard verification was not completed) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 545.692 Tm (after deployment.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 514.208 Tm (3. Prompt iteration lessons) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 494.208 Tm (First direction | Added context or constraint | Improvement) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 477.138 Tm (Copy a reference school dashboard | Keep existing SIMS routes, permissions, and data; use original Bootstrap) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 465.068 Tm (styling | Avoided adding reference-only features or copied assets.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 447.998 Tm (Add a student timeline like the reference | Use only enrollment and schedule data present in SIMS | Avoided) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 435.928 Tm (inventing attendance, quiz, or parent details.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 418.858 Tm (Fix the dashboard error | Use the exact production SQLite error and the affected authenticated dashboard | Led) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 406.788 Tm (to a schema-aware fallback and a migration deployment change.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 377.718 Tm (4. AI output verification examples) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 357.718 Tm (Suggestion or issue | Risk found | Correction and evidence recorded) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 340.648 Tm (Reuse a broad reference-site menu | Some destinations did not exist in SIMS | Limited navigation to existing) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 328.578 Tm (routes; tests and route checks were recorded.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 311.508 Tm (Use a generic students.index route name | Web and API route names could collide | API route names were) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 299.438 Tm (prefixed; URL and sidebar behavior were tested.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 282.368 Tm (Copy a student timeline with attendance and quiz activity | SIMS did not store those facts | Built the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 270.298 Tm (timeline from enrollment data and schedule data; feature coverage was added.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 253.228 Tm (Query events unconditionally in the dashboard | The deployed SQLite database lacked the events table | Added) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 241.158 Tm (schema guards and a migration build hook; authenticated browser verification remains outstanding.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 224.088 Tm (See docs/VERIFICATION_LOG.md for the longer history and exact recorded checks. Historical) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 209.604 Tm (results are not a substitute for rerunning checks before the final demonstration.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 178.12 Tm (5. Screenshots and optional AI comparison) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 158.12 Tm (Screenshots to add from your own sessions:) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 138.636 Tm (1. An AI prompt and its refined version in the tool you actually used.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 119.152 Tm (2. Login and dashboard.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 99.668 Tm (3. Students with a visible validation error.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 80.184 Tm (4. Enrollments.) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  2 / 3) Tj ET Q
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1084 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  AI Engineering Portfolio) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 774 Tm (5. A successful Postman student API request.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 754.516 Tm (No screenshots were present in the project logs when this draft was prepared. Capture genuine) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 740.032 Tm (screens and add them before final submission. Do not use mockups as evidence.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 720.548 Tm (Optional comparison study: Not recorded. If you perform it, use the same task prompt with the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 706.064 Tm (required tools, save each result, compare correctness and Laravel fit, and explain which output) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 691.58 Tm (you chose. Otherwise leave this bonus unclaimed.) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  3 / 3) Tj ET Q
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Title (AI Engineering Portfolio) /Author (Marcuel L. Gubaynon) /Subject (SIMS final project report) >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000231 00000 n 
+0000000333 00000 n 
+0000005384 00000 n 
+0000005526 00000 n 
+0000011233 00000 n 
+0000011375 00000 n 
+0000012511 00000 n 
+0000012654 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R /Info 11 0 R >>
+startxref
+12777
+%%EOF

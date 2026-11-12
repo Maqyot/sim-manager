@@ -1,28 +1,83 @@
 # AI Engineering Portfolio — SIMS
-Export to `ai-portfolio.pdf`. Fill every section with your real work; screenshots and prompt text must come from your own sessions.
 
-## 1. AI platforms used
-| Platform | Model | Purpose | Strengths | Why selected |
-|---|---|---|---|---|
-| | | | | |
+Student: Marcuel L. Gubaynon
 
-## 2. Prompt history (one block per feature)
-### Feature: <e.g. database schema>
-- **Initial prompt:** 
-- **Refined prompt:** 
-- **Validation prompt:** (ask the AI to review its own output against the rubric)
-- **Debug prompt:** (paste the actual error message)
-- **Screenshot:** 
+Course: Laravel Web Development
 
-Repeat for: authentication, authorization, student CRUD, subject CRUD, enrollments, API, tests.
+Project: Student Information Management System
 
-## 3. Prompt iterations
-Show 2-3 prompts that changed. What was wrong with v1, what you added in v2 (context, constraints, output format), what improved.
+Prepared: 12 November 2026
 
-## 4. AI output verification log
-| AI suggested | Problem found | Correction applied | Result validated (how) |
+> Draft based on the project prompt and verification logs. Add your own screenshots and complete the marked personal details before submitting this report as final.
+
+## 1. AI platforms recorded
+
+| Platform | Model recorded | Project use evidenced in the logs | Personal selection reason |
 |---|---|---|---|
-| | | | |
+| GitHub Copilot SDK in Visual Studio Code | Not recorded in the historical entries | Iterative implementation of dashboard, student, subject, enrollment, schedule, authentication, and messaging features | **Student to complete:** explain why you chose this tool and what worked well for you. |
+| Codex desktop | GPT-6 in the 12 November entries | Events and sessions, Wasmer production debugging, rubric review, and workflow documentation | **Student to complete:** explain why you chose this tool and what worked well for you. |
 
-## 5. Optional bonus: AI comparison study
-Same prompt to ChatGPT, Claude, Gemini and Copilot. Table of differences, and which you chose and why.
+The project log does not record a comparison run across ChatGPT, Claude, Gemini, and Copilot. No comparison claim is made here.
+
+## 2. Representative prompt history
+
+The quotations below are copied from the project prompt log. The refined prompts are summaries when the exact follow-up wording was not recorded.
+
+### Dashboard and directory design
+
+- **Initial prompt:** “can you copy some of the menu of this site? https://preskool.dreamstechnologies.com/html/index.html into my project”
+- **Refinement recorded:** Use a responsive sidebar for the existing Dashboard, Students, Subjects, and Enrollments routes.
+- **Decision:** Keep the project's own Bootstrap styling and real records; do not copy the reference site's assets or add unrelated menu destinations.
+- **Verification recorded:** Focused auth test and feature coverage. The log says the manual responsive browser check remained to be done.
+
+### Subject schedule
+
+- **Initial prompt:** “for subject also can you add the time? also update the database”
+- **Refinement recorded:** Store meeting weekdays and a start/end time range; require a complete schedule when any schedule field is entered.
+- **Verification recorded:** Migration/status checks and feature cases for creating, invalidating, updating, and clearing a schedule.
+
+### School events and sessions
+
+- **Initial prompt:** Request for dashboard ideas including events, classes, and sessions.
+- **Refinement/decision recorded:** Add event management and show sessions grouped from existing school-year/semester enrollment values rather than duplicating term data.
+- **Verification recorded:** Migration applied; 50 tests and 267 assertions passed according to the project log. Manual browser review remained outstanding.
+
+### Wasmer dashboard production error
+
+- **Debug evidence:** The project log records `SQLSTATE[HY000]: General error: 1 no such table: events` from Wasmer stderr.
+- **User refinement:** The user provided the admin login to reproduce the signed-in failure.
+- **Correction recorded:** Guard dashboard event queries when the table is absent and configure migrations in the Wasmer build flow.
+- **Verification recorded:** PHP lint passed; `/login` returned 200, `/up` returned 200, and unauthenticated `/dashboard` returned 302. Authenticated dashboard verification was not completed after deployment.
+
+## 3. Prompt iteration lessons
+
+| First direction | Added context or constraint | Improvement |
+|---|---|---|
+| Copy a reference school dashboard | Keep existing SIMS routes, permissions, and data; use original Bootstrap styling | Avoided adding reference-only features or copied assets. |
+| Add a student timeline like the reference | Use only enrollment and schedule data present in SIMS | Avoided inventing attendance, quiz, or parent details. |
+| Fix the dashboard error | Use the exact production SQLite error and the affected authenticated dashboard | Led to a schema-aware fallback and a migration deployment change. |
+
+## 4. AI output verification examples
+
+| Suggestion or issue | Risk found | Correction and evidence recorded |
+|---|---|---|
+| Reuse a broad reference-site menu | Some destinations did not exist in SIMS | Limited navigation to existing routes; tests and route checks were recorded. |
+| Use a generic `students.index` route name | Web and API route names could collide | API route names were prefixed; URL and sidebar behavior were tested. |
+| Copy a student timeline with attendance and quiz activity | SIMS did not store those facts | Built the timeline from enrollment data and schedule data; feature coverage was added. |
+| Query events unconditionally in the dashboard | The deployed SQLite database lacked the events table | Added schema guards and a migration build hook; authenticated browser verification remains outstanding. |
+
+See `docs/VERIFICATION_LOG.md` for the longer history and exact recorded checks. Historical results are not a substitute for rerunning checks before the final demonstration.
+
+## 5. Screenshots and optional AI comparison
+
+**Screenshots to add from your own sessions:**
+
+1. An AI prompt and its refined version in the tool you actually used.
+2. Login and dashboard.
+3. Students with a visible validation error.
+4. Enrollments.
+5. A successful Postman student API request.
+
+No screenshots were present in the project logs when this draft was prepared. Capture genuine screens and add them before final submission. Do not use mockups as evidence.
+
+**Optional comparison study:** Not recorded. If you perform it, use the same task prompt with the required tools, save each result, compare correctness and Laravel fit, and explain which output you chose. Otherwise leave this bonus unclaimed.

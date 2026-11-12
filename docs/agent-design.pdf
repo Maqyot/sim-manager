@@ -1,0 +1,130 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [6 0 R 8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 4950 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  Agent Design) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.08 0.27 0.43 rg BT /F2 22 Tf 1 0 0 1 52 756 Tm (Agent Design -- SIMS) Tj ET Q
+q 0.18 0.62 0.68 RG 2 w 52 730 m 543 730 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 711 Tm (Student: Marcuel L. Gubaynon) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 691.516 Tm (Course: Laravel Web Development) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 672.032 Tm (Project: Student Information Management System) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 652.548 Tm (Prepared: 12 November 2026) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 621.064 Tm (1. Proposed specialized workflow) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 601.064 Tm (1. The student developer sets the scope, reviews changes, and explains the final decisions.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 581.58 Tm (2. The Planner turns the handbook requirement into a small task and acceptance checks.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 562.096 Tm (3. The Database role handles schema changes when needed; the Laravel role implements routes,) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 547.612 Tm (validation, controllers, and views.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 528.128 Tm (4. The Testing role checks behavior and authorization. The Reviewer examines the diff and) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 513.644 Tm (reports risks.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 494.16 Tm (5. The Documentation role updates reports and instructions from verified results.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 474.676 Tm (6. The student accepts the change and demonstrates it.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 455.192 Tm (The Database, Laravel, and Documentation roles can work in parallel only after the Planner) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 440.708 Tm (defines clear boundaries. Testing and review follow implementation.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 421.224 Tm (This workflow defines the project's role design. The role prompts can be assigned to separate) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 406.74 Tm (agents when delegation is available, or used one at a time as checklists.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 375.256 Tm (2. Role responsibilities and handoffs) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 355.256 Tm (Role | Reads | Produces | Does not do) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 338.186 Tm (Planner | AGENTS.md, handbook/rubric, current feature summary | Small plan and observable acceptance checks |) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 326.116 Tm (Write application code) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 309.046 Tm (Database | Migrations, models, feature plan | Migration/model changes and schema handoff | Change) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 296.976 Tm (controllers/views; rewrite migrations that may already have run) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 279.906 Tm (Laravel | Schema handoff, routes, requests, relevant views/tests | One feature implementation using MVC and) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 267.836 Tm (existing authorization | Change schema without a handoff; put business logic in Blade) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 250.766 Tm (Testing | Routes, controllers, Form Requests, current tests | Feature tests and validation/security findings |) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 238.696 Tm (Change app code or weaken tests) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 221.626 Tm (Reviewer | Diff, AGENTS.md, acceptance checks | Severity-ordered findings with file/line and correction |) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 209.556 Tm (Apply unreviewed changes silently) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 192.486 Tm (Documentation | Verified feature and actual prompt/check records | README/API/prompt/verification updates |) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 8.5 Tf 1 0 0 1 52 180.416 Tm (Invent screenshots, model names, features, or test results) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 11.5 Tf 1 0 0 1 52 155.346 Tm (Standard handoff format) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 138.846 Tm (- Feature and acceptance checks) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 119.362 Tm (- Files/routes/tables changed) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 99.878 Tm (- Validation and role boundaries) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 80.394 Tm (- Exact checks run and their results) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  1 / 2) Tj ET Q
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 5009 >>
+stream
+q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  Agent Design) Tj ET Q
+q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 774 Tm (- Remaining manual checks or risks) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 754.516 Tm (- Next role and the concise context it needs) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 735.032 Tm (Role instructions are stored in agents/planner.md, database.md, laravel.md, testing.md,) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 720.548 Tm (reviewer.md, and documentation.md.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 689.064 Tm (3. Context management) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 669.064 Tm (Start each task with AGENTS.md and one rubric requirement. Give each role only the relevant) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 654.58 Tm (feature files. For example, a student API task needs the API routes/controller/resource, student) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 640.096 Tm (Form Request/model, auth middleware, and API tests. A schema task needs the related migrations) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 625.612 Tm (and models. Pass a short schema/route summary between roles.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 606.128 Tm (Leave out .env, credentials, vendor/, generated caches, the full database, and unrelated feature) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 591.644 Tm (folders. For a production bug, provide the exact error text, route/action, and environment. See) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 577.16 Tm (docs/CONTEXT_STRATEGY.md for the repeatable rules and reflection prompts.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 545.676 Tm (4. Task decomposition and token management) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 525.676 Tm (1. Split a broad request into a small feature with observable acceptance checks.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 506.192 Tm (2. Reuse stable project rules from AGENTS.md rather than repeating them.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 486.708 Tm (3. Separate schema design, application code, review, testing, and documentation when the feature) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 472.224 Tm (is broad.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 452.74 Tm (4. Ask for a short plan before coding if a schema or behavior decision is unclear.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 433.256 Tm (5. Reuse concise handoffs rather than resending the entire project.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 413.772 Tm (6. Review and verify each feature before stacking another change on top.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 394.288 Tm (The tradeoff is to keep prompts small while retaining enough schema, route, and authorization) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 379.804 Tm (context to avoid breaking adjacent features.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 348.32 Tm (5. What was actually used) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 328.32 Tm (The history in docs/PROMPT_LOG.md usually records Primary assistant; no subagent. It documents) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 313.836 Tm (AI-assisted iterative work, but it does not establish that these specialized roles ran as) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 299.352 Tm (separate agents. This report therefore presents the role architecture as a designed workflow,) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 284.868 Tm (not as a false execution claim. If the student later runs actual specialized agents, record) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 270.384 Tm (their task, inputs, outputs, and handoffs in the prompt log.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 238.9 Tm (6. Student reflection questions) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 218.9 Tm (Before final submission, add a specific example for each question:) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 199.416 Tm (1. Which file subset or summary did you give an AI for one feature?) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 179.932 Tm (2. Which refinement changed the result, and why?) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 160.448 Tm (3. What context did you deliberately leave out?) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 140.964 Tm (4. How did you verify generated output, and what remained unverified?) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 121.48 Tm (5. Which specialization would have helped most, and which would have been unnecessary for this) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 106.996 Tm (project?) Tj ET Q
+q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  2 / 2) Tj ET Q
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Agent Design) /Author (Marcuel L. Gubaynon) /Subject (SIMS final project report) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000005328 00000 n 
+0000005470 00000 n 
+0000010531 00000 n 
+0000010673 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+10783
+%%EOF
