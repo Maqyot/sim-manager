@@ -3,7 +3,7 @@ owner: maqyot
 name: sim-manager
 package: .
 jobs:
-  - name: after_deploy
+  - name: migrate-laravel
     trigger: post-deployment
     timeout: 5m
     action:
