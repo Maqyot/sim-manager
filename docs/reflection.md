@@ -36,6 +36,9 @@ Another iteration involved student login. A forced password-change screen did no
 
 AI suggestions were checked against existing routes, stored data, role boundaries, tests, and real deployment errors. The prompt log records corrections such as using `api.` route-name prefixes to avoid a web/API naming collision and avoiding reference-page fields that SIMS does not store. I should rerun the current test suite and manually demonstrate the final app before treating historical test results as current evidence.
 
+### Student registration and approval update
+
+The latest change adds a student registration form and a pending state. The admin dashboard displays pending accounts for administrators, and student login checks approval before opening the portal. Existing student records can register by matching their stored profile. The approval migration was applied locally and Blade compilation succeeded. I have not yet checked the flow in a browser or run feature tests, so those results must be added after I verify them.
 ## 6. Challenges and lessons learned
 
 The main challenge recorded in this project was that local and deployed environments can differ: a local migration can be complete while the deployed SQLite package still lacks a newer table. Exact production error logs helped narrow that problem. Another lesson is that a polished interface must still use real project data and preserve role checks.

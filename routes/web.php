@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StudentMessageController;
+use App\Http\Controllers\StudentRegistrationController;
 use App\Http\Controllers\StudentPortalController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Middleware\EnsureAdmin;
@@ -20,6 +21,8 @@ Route::middleware('guest')->group(function () {
     Route::post('login', [AuthController::class, 'login']);
     Route::get('register', [AuthController::class, 'showRegister'])->name('register');
     Route::post('register', [AuthController::class, 'register']);
+    Route::get('student/register', [StudentRegistrationController::class, 'create'])->name('student.register');
+    Route::post('student/register', [StudentRegistrationController::class, 'store'])->name('student.register.store');
 });
 
 Route::middleware('auth')->group(function () {
@@ -44,6 +47,7 @@ Route::middleware('auth')->group(function () {
             Route::get('admin/messages', [AdminMessageController::class, 'index'])->name('admin.messages.index');
             Route::get('admin/messages/{student}', [AdminMessageController::class, 'show'])->name('admin.messages.show');
             Route::post('admin/messages/{student}', [AdminMessageController::class, 'store'])->name('admin.messages.store');
+            Route::post('admin/student-registrations/{user}/approve', [StudentRegistrationController::class, 'approve'])->name('admin.student-registrations.approve');
         });
     });
 

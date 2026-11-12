@@ -40,6 +40,7 @@
                     <button class="btn btn-primary w-100">Login</button>
                 </form>
                 <p class="text-center text-body-secondary mt-3 mb-0" id="staff-login-help">Contact the system admin before requesting your credentials.</p>
+                <p class="text-center text-body-secondary mt-3 mb-0 d-none" id="student-login-help">New student? <a href="{{ route('student.register') }}">Register here</a>. Your account needs admin approval before login.</p>
             </div>
         </div>
     </div>
@@ -51,12 +52,14 @@
     const staffEmailInput = document.getElementById('email');
     const studentNumberInput = document.getElementById('student_number');
     const staffLoginHelp = document.getElementById('staff-login-help');
+    const studentLoginHelp = document.getElementById('student-login-help');
 
     function updateLoginFields() {
         const isStudent = document.getElementById('account_type_student').checked;
         staffEmailField.classList.toggle('d-none', isStudent);
         studentNumberField.classList.toggle('d-none', !isStudent);
         staffLoginHelp.classList.toggle('d-none', isStudent);
+        studentLoginHelp.classList.toggle('d-none', !isStudent);
         staffEmailInput.disabled = isStudent;
         studentNumberInput.disabled = !isStudent;
     }

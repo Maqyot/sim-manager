@@ -6,6 +6,7 @@ use App\Models\Enrollment;
 use App\Models\Event;
 use App\Models\Student;
 use App\Models\Subject;
+use App\Models\User;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\View\View;
 
@@ -15,6 +16,9 @@ class DashboardController extends Controller
     {
         return view('dashboard', [
             'studentCount' => Student::count(),
+            'pendingStudentRegistrations' => auth()->user()->isAdmin()
+                ? User::where('role', User::ROLE_STUDENT)->where('is_approved', false)->with('student')->oldest()->get()
+                : collect(),
             'subjectCount' => Subject::count(),
             'enrollmentCount' => Enrollment::count(),
             'statusCounts' => Enrollment::selectRaw('status, count(*) as total')->groupBy('status')->pluck('total', 'status'),

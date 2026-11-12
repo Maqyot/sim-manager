@@ -210,3 +210,16 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Result:** Added the student's provided name to all three report sources, exported `docs/ai-portfolio.pdf`, `docs/agent-design.pdf`, and `docs/reflection.pdf`, and marked absent screenshots and student-specific reflection details as remaining work. The reports do not claim separate AI agents or an AI comparison study that the logs do not evidence.
 - **Validation:** `pdfinfo` confirmed A4 page dimensions and page counts (3, 2, and 2); first pages were rendered and visually reviewed. No application tests were relevant or run.
 - **Screenshot:** Not captured.
+## Feature entry: Student registration with administrator approval
+
+- **Date / tool / model:** 2026-11-12 / Codex desktop / GPT-6
+- **Feature:** Student self-registration and admin approval gate
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** “for student form put a registration form, then in admin dashboard put a like a verification box that will accept for any student newly registrated before they can login”
+- **What was wrong with the result:** Students had no self-service registration form or approval queue; the prior student first-login flow could create an account without administrator review.
+- **Refined prompt:** None.
+- **Validation prompt:** None.
+- **Debug prompt:** None.
+- **Result:** Added student registration with profile/password validation, pending approval state, a dashboard queue visible only to admins, and an approve action. Student login now rejects pending accounts. Existing student records can register by matching their stored details. Staff registration remains separate.
+- **Validation:** PHP lint passed for edited PHP files; the approval migration ran locally; Blade template compilation succeeded. Browser checks and the feature test suite remain to be run.
+- **Screenshot:** Not captured.

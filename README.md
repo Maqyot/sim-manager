@@ -26,7 +26,7 @@ Open http://127.0.0.1:8000
 | Admin | admin@sims.test | password |
 | Staff | staff@sims.test | password |
 
-Change these before using real data. Self-registration always creates `staff`.
+Change these before using real data. Staff self-registration at `/register` creates `staff` accounts. Student self-registration uses `/student/register` and requires administrator approval before login.
 
 ## Docker
 The Docker image runs PHP 8.3 with Apache and SQLite. Docker Engine must be installed and running.
@@ -82,6 +82,9 @@ and run `php artisan migrate --seed`.
 
 All pages require login. Restricted routes use the `admin` middleware (`EnsureAdmin`) and return 403.
 
+## Student account registration
+
+Students select **Student** on the login page and choose **Register here**. The form collects the student profile and password, validates unique student number/email and profile fields, and creates a pending portal account. An administrator approves requests from the **Student registration approvals** card on the admin dashboard. A pending account cannot sign in until approved. Registration does not send an email verification link; the administrator checks the submitted details. Existing student records can register by entering details that match their record.
 ## Frontend
 Bootstrap 5.3.8 is vendored in `public/vendor/bootstrap/` and loaded in `resources/views/layouts/app.blade.php` with `asset()`, so the app works offline and needs no Node build. It uses the navbar, cards, responsive tables, form validation states (`is-invalid` + `invalid-feedback`), badges and pagination components, and switches between light and dark themes with the visitor's system setting. To upgrade Bootstrap, replace the two files in that folder.
 

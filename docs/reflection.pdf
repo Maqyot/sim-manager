@@ -64,7 +64,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
 endobj
 7 0 obj
-<< /Length 4033 >>
+<< /Length 4940 >>
 stream
 q 0.20 0.45 0.58 rg BT /F2 8 Tf 1 0 0 1 52 810 Tm (SIMS  |  Reflection Report) Tj ET Q
 q 0.20 0.55 0.64 RG 1.4 w 52 797 m 543 797 l S Q
@@ -78,23 +78,29 @@ q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 664.58 Tm (real deployment errors.
 q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 650.096 Tm (prefixes to avoid a web/API naming collision and avoiding reference-page fields that SIMS does) Tj ET Q
 q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 635.612 Tm (not store. I should rerun the current test suite and manually demonstrate the final app before) Tj ET Q
 q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 621.128 Tm (treating historical test results as current evidence.) Tj ET Q
-q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 589.644 Tm (6. Challenges and lessons learned) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 569.644 Tm (The main challenge recorded in this project was that local and deployed environments can differ:) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 555.16 Tm (a local migration can be complete while the deployed SQLite package still lacks a newer table.) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 540.676 Tm (Exact production error logs helped narrow that problem. Another lesson is that a polished) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 526.192 Tm (interface must still use real project data and preserve role checks.) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 506.708 Tm (Personal detail to add: What was the hardest part for me? What did I learn while explaining or) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 492.224 Tm (debugging it?) Tj ET Q
-q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 460.74 Tm (7. What I would improve with two more weeks) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 440.74 Tm (I would capture the required screenshots, finish and export the portfolio reports, rerun the) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 426.256 Tm (full feature suite, manually verify admin/staff/student access, and confirm the authenticated) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 411.772 Tm (deployed dashboard and Postman API flow. I would also use the documented specialized roles on a) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 397.288 Tm (future feature and record each real handoff if the tools support it.) Tj ET Q
-q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 365.804 Tm (Final student review) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 345.804 Tm (Before submitting, replace the marked personal-detail prompts with your own experience, verify) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 331.32 Tm (the tool/model details, add genuine screenshots to the portfolio, and update the verification) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 316.836 Tm (log with checks you personally rerun. This draft intentionally does not claim unrecorded agent) Tj ET Q
-q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 302.352 Tm (runs, screenshots, AI comparisons, or deployment verification.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 11.5 Tf 1 0 0 1 52 593.644 Tm (Student registration and approval update) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 577.144 Tm (The latest change adds a student registration form and a pending state. The admin dashboard) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 562.66 Tm (displays pending accounts for administrators, and student login checks approval before opening) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 548.176 Tm (the portal. Existing student records can register by matching their stored profile. The approval) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 533.692 Tm (migration was applied locally and Blade compilation succeeded. I have not yet checked the flow) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 519.208 Tm (in a browser or run feature tests, so those results must be added after I verify them.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 487.724 Tm (6. Challenges and lessons learned) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 467.724 Tm (The main challenge recorded in this project was that local and deployed environments can differ:) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 453.24 Tm (a local migration can be complete while the deployed SQLite package still lacks a newer table.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 438.756 Tm (Exact production error logs helped narrow that problem. Another lesson is that a polished) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 424.272 Tm (interface must still use real project data and preserve role checks.) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 404.788 Tm (Personal detail to add: What was the hardest part for me? What did I learn while explaining or) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 390.304 Tm (debugging it?) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 358.82 Tm (7. What I would improve with two more weeks) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 338.82 Tm (I would capture the required screenshots, finish and export the portfolio reports, rerun the) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 324.336 Tm (full feature suite, manually verify admin/staff/student access, and confirm the authenticated) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 309.852 Tm (deployed dashboard and Postman API flow. I would also use the documented specialized roles on a) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 295.368 Tm (future feature and record each real handoff if the tools support it.) Tj ET Q
+q 0.08 0.27 0.43 rg BT /F2 15 Tf 1 0 0 1 52 263.884 Tm (Final student review) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 243.884 Tm (Before submitting, replace the marked personal-detail prompts with your own experience, verify) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 229.4 Tm (the tool/model details, add genuine screenshots to the portfolio, and update the verification) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 214.916 Tm (log with checks you personally rerun. This draft intentionally does not claim unrecorded agent) Tj ET Q
+q 0.14 0.19 0.25 rg BT /F1 10.2 Tf 1 0 0 1 52 200.432 Tm (runs, screenshots, AI comparisons, or deployment verification.) Tj ET Q
 q 0.45 0.49 0.54 rg BT /F1 8 Tf 1 0 0 1 52 34 Tm (Marcuel L. Gubaynon  |  2 / 2) Tj ET Q
 endstream
 endobj
@@ -114,10 +120,10 @@ xref
 0000000326 00000 n 
 0000005738 00000 n 
 0000005880 00000 n 
-0000009965 00000 n 
-0000010107 00000 n 
+0000010872 00000 n 
+0000011014 00000 n 
 trailer
 << /Size 10 /Root 1 0 R /Info 9 0 R >>
 startxref
-10222
+11129
 %%EOF

@@ -16,7 +16,7 @@ class User extends Authenticatable
     public const ROLE_STAFF = 'staff';
     public const ROLE_STUDENT = 'student';
 
-    protected $fillable = ['name', 'email', 'password', 'role', 'student_id'];
+    protected $fillable = ['name', 'email', 'password', 'role', 'student_id', 'is_approved'];
 
     protected $hidden = ['password', 'remember_token', 'api_token'];
 
@@ -24,6 +24,7 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
+            'is_approved' => 'boolean',
             'password' => 'hashed',
         ];
     }

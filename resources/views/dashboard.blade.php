@@ -95,6 +95,37 @@
     @endforeach
 </div>
 
+@if (auth()->user()->isAdmin())
+    <section class="card dashboard-panel shadow-sm mb-4" aria-labelledby="student-registration-queue-title">
+        <div class="card-body p-0">
+            <div class="d-flex justify-content-between align-items-center gap-2 p-4 border-bottom">
+                <div>
+                    <h2 class="h5 fw-semibold mb-1" id="student-registration-queue-title">Student registration approvals</h2>
+                    <p class="small text-body-secondary mb-0">Review new student accounts before they can sign in.</p>
+                </div>
+                <span class="badge rounded-pill text-bg-warning">{{ $pendingStudentRegistrations->count() }} pending</span>
+            </div>
+            <div class="list-group list-group-flush">
+                @forelse ($pendingStudentRegistrations as $registration)
+                    <div class="list-group-item p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                        <div>
+                            <div class="fw-semibold">{{ $registration->student->full_name }}</div>
+                            <div class="small text-body-secondary">{{ $registration->student->student_number }} · {{ $registration->student->email }}</div>
+                            <div class="small text-body-secondary">{{ $registration->student->course }} · Year {{ $registration->student->year_level }}</div>
+                        </div>
+                        <form method="POST" action="{{ route('admin.student-registrations.approve', $registration) }}">
+                            @csrf
+                            <button class="btn btn-success">Approve student</button>
+                        </form>
+                    </div>
+                @empty
+                    <div class="p-4 text-body-secondary">No student registrations are waiting for approval.</div>
+                @endforelse
+            </div>
+        </div>
+    </section>
+@endif
+
 <div class="row g-3 mb-4">
     <div class="col-xl-7">
         <section class="card dashboard-panel shadow-sm h-100">

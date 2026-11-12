@@ -34,22 +34,12 @@ class AuthController extends Controller
             $student = Student::where('student_number', $data['student_number'])->first();
             $user = $student?->user;
 
-            if ($student && ! $user && hash_equals($student->course, $data['password'])) {
-                if (User::where('email', $student->email)->exists()) {
-                    return back()->withErrors(['student_number' => 'Please contact your administrator to set up your student account.'])->withInput($request->only('student_number', 'account_type'));
-                }
-
-                $user = User::create([
-                    'name' => $student->full_name,
-                    'email' => $student->email,
-                    'password' => $student->course,
-                    'role' => User::ROLE_STUDENT,
-                    'student_id' => $student->id,
-                ]);
-            }
-
             if (! $user?->isStudent() || ! Hash::check($data['password'], $user->password)) {
                 return back()->withErrors(['student_number' => 'The student number or password is incorrect.'])->withInput($request->only('student_number', 'account_type'));
+            }
+
+            if (! $user->is_approved) {
+                return back()->withErrors(['student_number' => 'Your registration is waiting for administrator approval.'])->withInput($request->only('student_number', 'account_type'));
             }
 
             Auth::login($user, $request->boolean('remember'));

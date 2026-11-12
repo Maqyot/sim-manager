@@ -49,6 +49,11 @@ The quotations below are copied from the project prompt log. The refined prompts
 - **Correction recorded:** Guard dashboard event queries when the table is absent and configure migrations in the Wasmer build flow.
 - **Verification recorded:** PHP lint passed; `/login` returned 200, `/up` returned 200, and unauthenticated `/dashboard` returned 302. Authenticated dashboard verification was not completed after deployment.
 
+### Student registration with administrator approval
+
+- **Initial prompt:** “for student form put a registration form, then in admin dashboard put a like a verification box that will accept for any student newly registrated before they can login”
+- **Result recorded:** Added a student profile/password form, created accounts in a pending state, showed pending requests to admins, and blocked student login until approval. Existing records can register only with profile details matching the stored record.
+- **Checks recorded:** PHP lint, migration, Blade compilation, and route checks succeeded. Browser and feature tests remain to be run.
 ## 3. Prompt iteration lessons
 
 | First direction | Added context or constraint | Improvement |
@@ -65,6 +70,8 @@ The quotations below are copied from the project prompt log. The refined prompts
 | Use a generic `students.index` route name | Web and API route names could collide | API route names were prefixed; URL and sidebar behavior were tested. |
 | Copy a student timeline with attendance and quiz activity | SIMS did not store those facts | Built the timeline from enrollment data and schedule data; feature coverage was added. |
 | Query events unconditionally in the dashboard | The deployed SQLite database lacked the events table | Added schema guards and a migration build hook; authenticated browser verification remains outstanding. |
+
+| Let newly registered student accounts sign in immediately | New portal accounts must be approved by an administrator first | Added a pending state, admin-only approval action, and login block. PHP lint, migration, Blade compilation, and route checks passed; browser and feature tests remain outstanding. |
 
 See `docs/VERIFICATION_LOG.md` for the longer history and exact recorded checks. Historical results are not a substitute for rerunning checks before the final demonstration.
 

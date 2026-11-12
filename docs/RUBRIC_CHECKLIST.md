@@ -8,7 +8,7 @@ Reviewed 2026-11-12 against `FinalProjectHandbook.pdf`, `FinalProjectRubric.pdf`
 
 | Rubric area | Weight | Evidence in this project | Status / remaining work |
 |---|---:|---|---|
-| Authentication | 5% | `app/Http/Controllers/AuthController.php`; `resources/views/auth/`; `tests/Feature/AuthTest.php` | **Complete in project.** Demonstrate register, login, and logout. |
+| Authentication and student approval | 5% | `app/Http/Controllers/AuthController.php`, `StudentRegistrationController.php`, `StudentRegistrationRequest.php`, registration views, and admin dashboard queue | **Implemented locally.** Staff registration, student registration, pending-login block, and admin approval exist. PHP lint, migration, Blade compilation, and route checks passed; browser and feature tests remain to be run. |
 | Authorization | 5% | `app/Http/Middleware/EnsureAdmin.php`, `EnsureStaff.php`, `EnsureStudent.php`; protected groups in `routes/web.php` and `routes/api.php` | **Complete in project.** Demonstrate admin, staff, student, and guest boundaries. |
 | CRUD | 10% | Student, subject, and enrollment controllers, requests, views, and `StudentWebTest.php`, `SubjectTest.php`, `EnrollmentTest.php` | **Complete in project.** Show create, view, update, delete, and a validation error for each relevant module. |
 | Database design and Eloquent | 10% | `database/migrations/`; `app/Models/Student.php`, `Subject.php`, `Enrollment.php` | **Complete in project.** Explain the student–enrollment–subject relationships and unique enrollment term constraint. |
