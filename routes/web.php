@@ -4,6 +4,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminMessageController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EnrollmentController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\SessionController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\StudentMessageController;
 use App\Http\Controllers\StudentPortalController;
@@ -22,11 +24,13 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('events', [EventController::class, 'index'])->name('events.index');
     Route::get('password', [AuthController::class, 'showChangePassword'])->name('password.edit');
     Route::put('password', [AuthController::class, 'updatePassword'])->name('password.update');
 
     Route::middleware('staff')->group(function () {
         Route::get('dashboard', DashboardController::class)->name('dashboard');
+        Route::get('sessions', [SessionController::class, 'index'])->name('sessions.index');
 
         Route::resource('students', StudentController::class)->except('destroy');
         Route::resource('enrollments', EnrollmentController::class)->except(['show', 'destroy']);
@@ -36,6 +40,7 @@ Route::middleware('auth')->group(function () {
             Route::delete('students/{student}', [StudentController::class, 'destroy'])->name('students.destroy');
             Route::delete('enrollments/{enrollment}', [EnrollmentController::class, 'destroy'])->name('enrollments.destroy');
             Route::resource('subjects', SubjectController::class)->except(['index', 'show']);
+            Route::resource('events', EventController::class)->except(['index', 'show']);
             Route::get('admin/messages', [AdminMessageController::class, 'index'])->name('admin.messages.index');
             Route::get('admin/messages/{student}', [AdminMessageController::class, 'show'])->name('admin.messages.show');
             Route::post('admin/messages/{student}', [AdminMessageController::class, 'store'])->name('admin.messages.store');

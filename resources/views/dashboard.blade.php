@@ -182,4 +182,14 @@
         </div>
     </div>
 </section>
+<section class="card dashboard-panel shadow-sm mt-4">
+    <div class="card-body p-0">
+        <div class="d-flex justify-content-between align-items-center gap-2 p-4 border-bottom"><div><h2 class="h5 fw-semibold mb-1">Upcoming school events</h2><p class="small text-body-secondary mb-0">Campus activities and important dates</p></div><a href="{{ route('events.index') }}" class="btn btn-outline-secondary btn-sm">View calendar</a></div>
+        <div class="list-group list-group-flush">
+            @forelse($upcomingEvents as $event)
+                <div class="list-group-item px-4 py-3 d-flex justify-content-between gap-2"><div><div class="fw-semibold">{{ $event->title }}</div><div class="small text-body-secondary">{{ $event->location ?: 'Location to be announced' }}</div></div><div class="text-end"><div>{{ $event->starts_at->format('M j, Y') }}</div><div class="small text-body-secondary">{{ $event->starts_at->format('g:i A') }}</div></div></div>
+            @empty<div class="p-4 text-body-secondary">No upcoming school events have been posted.</div>@endforelse
+        </div>
+    </div>
+</section>
 @endsection

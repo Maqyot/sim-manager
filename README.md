@@ -28,6 +28,24 @@ Open http://127.0.0.1:8000
 
 Change these before using real data. Self-registration always creates `staff`.
 
+## Docker
+The Docker image runs PHP 8.3 with Apache and SQLite. Docker Engine must be installed and running.
+
+1. Copy `.env.example` to `.env`. Set `APP_KEY` to the output of `php artisan key:generate --show` and set `APP_URL=http://localhost:8080`.
+2. Build the image:
+   ```bash
+   docker build -t sims .
+   ```
+3. Apply database migrations to the persistent SQLite volume:
+   ```bash
+   docker run --rm --env-file .env -e DB_CONNECTION=sqlite -e DB_DATABASE=/var/lib/sims/database.sqlite -v sims-data:/var/lib/sims sims php artisan migrate --force
+   ```
+4. Start the application:
+   ```bash
+   docker run --name sims --env-file .env -e DB_CONNECTION=sqlite -e DB_DATABASE=/var/lib/sims/database.sqlite -p 8080:80 -v sims-data:/var/lib/sims sims
+   ```
+   Open http://localhost:8080. The named `sims-data` volume preserves the SQLite database across container restarts. Stop the container with `docker stop sims`.
+
 ## Database
 **SQLite (default):** nothing to configure.
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'SIMS') · Student Information Management</title>
+    <title>@yield('title', 'SIMS') ? Student Information Management</title>
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
     @stack('styles')
     <script>
@@ -77,7 +77,7 @@
                                         <a class="nav-link rounded {{ request()->routeIs('students.*') ? 'active text-bg-primary fw-semibold' : 'text-body' }}" href="{{ route('students.index') }}" @if (request()->routeIs('students.*')) aria-current="page" @endif>Students</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link rounded {{ request()->routeIs('subjects.*') ? 'active text-bg-primary fw-semibold' : 'text-body' }}" href="{{ route('subjects.index') }}" @if (request()->routeIs('subjects.*')) aria-current="page" @endif>Subjects</a>
+                                        <a class="nav-link rounded {{ request()->routeIs('subjects.*') ? 'active text-bg-primary fw-semibold' : 'text-body' }}" href="{{ route('subjects.index') }}" @if (request()->routeIs('subjects.*')) aria-current="page" @endif>Classes &amp; subjects</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link rounded {{ request()->routeIs('enrollments.*') ? 'active text-bg-primary fw-semibold' : 'text-body' }}" href="{{ route('enrollments.index') }}" @if (request()->routeIs('enrollments.*')) aria-current="page" @endif>Enrollments</a>
@@ -92,6 +92,12 @@
                                     </ul>
                                 @endif
                             @endif
+                            <ul class="nav nav-pills flex-column gap-1 mt-3">
+                                <li class="nav-item"><a class="nav-link rounded {{ request()->routeIs('events.*') ? 'active text-bg-primary fw-semibold' : 'text-body' }}" href="{{ route('events.index') }}" @if (request()->routeIs('events.*')) aria-current="page" @endif>School events</a></li>
+                                @unless (auth()->user()->isStudent())
+                                    <li class="nav-item"><a class="nav-link rounded {{ request()->routeIs('sessions.*') ? 'active text-bg-primary fw-semibold' : 'text-body' }}" href="{{ route('sessions.index') }}" @if (request()->routeIs('sessions.*')) aria-current="page" @endif>Academic sessions</a></li>
+                                @endunless
+                            </ul>
                         </nav>
                     </div>
                 </div>

@@ -1,0 +1,12 @@
+@extends('layouts.app')
+@section('title', 'Events')
+@push('styles')
+<style>.events-heading,.events-panel{border-radius:1rem}.events-heading{background:linear-gradient(120deg,#173b70,#2864a8);color:#fff}.events-panel{border:1px solid var(--bs-border-color)}</style>
+@endpush
+@section('content')
+<div class="events-heading p-4 p-lg-5 mb-4"><div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3"><div><div class="small text-white-50 mb-2">SIMS / Campus life</div><h1 class="h2 fw-bold mb-2">Events</h1><p class="mb-0 text-white-50">Upcoming activities and important school dates.</p></div>@if(auth()->user()->isAdmin())<a href="{{ route('events.create') }}" class="btn btn-light fw-semibold">Add event</a>@endif</div></div>
+<section class="card events-panel shadow-sm"><div class="card-body p-0"><div class="p-4 border-bottom"><h2 class="h5 fw-semibold mb-1">School calendar</h2><p class="small text-body-secondary mb-0">Events posted for students and staff.</p></div><div class="table-responsive"><table class="table table-hover align-middle mb-0"><thead><tr><th class="ps-4">Event</th><th>Date &amp; time</th><th>Location</th><th>Status</th>@if(auth()->user()->isAdmin())<th class="text-end pe-4">Actions</th>@endif</tr></thead><tbody>
+@forelse($events as $event)<tr><td class="ps-4"><div class="fw-semibold">{{ $event->title }}</div><div class="small text-body-secondary">{{ $event->description }}</div></td><td class="text-nowrap"><div>{{ $event->starts_at->format('M j, Y') }}</div><div class="small text-body-secondary">{{ $event->starts_at->format('g:i A') }}@if($event->ends_at)?{{ $event->ends_at->format('g:i A') }}@endif</div></td><td>{{ $event->location ?: '—' }}</td><td><span class="badge rounded-pill {{ $event->starts_at->isFuture() ? 'text-bg-primary' : 'text-bg-secondary' }}">{{ $event->starts_at->isFuture() ? 'Upcoming' : 'Past' }}</span></td>@if(auth()->user()->isAdmin())<td class="text-end text-nowrap pe-4"><a href="{{ route('events.edit', $event) }}" class="btn btn-sm btn-outline-primary">Edit</a><form method="POST" action="{{ route('events.destroy', $event) }}" class="d-inline" onsubmit="return confirm('Delete this event?')">@csrf @method('DELETE')<button class="btn btn-sm btn-outline-danger">Delete</button></form></td>@endif</tr>
+@empty<tr><td colspan="{{ auth()->user()->isAdmin() ? 5 : 4 }}" class="text-center py-5">No events posted yet.</td></tr>@endforelse
+</tbody></table></div><div class="p-3">@include('partials.pager', ['paginator' => $events])</div></div></section>
+@endsection

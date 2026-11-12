@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Enrollment;
+use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -24,6 +25,7 @@ class StudentPortalController extends Controller
                 ->sortBy(fn (Enrollment $enrollment) => $enrollment->subject->start_time),
             'recentEnrollments' => $enrollments->take(5),
             'today' => $today,
+            'upcomingEvents' => Event::where('starts_at', '>=', now())->orderBy('starts_at')->take(4)->get(),
         ]);
     }
 

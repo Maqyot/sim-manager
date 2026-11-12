@@ -139,6 +139,17 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Debug prompt:** None.
 - **Result:** Added a private, database-backed student/admin messaging inbox using existing Laravel and Bootstrap, with no external packages.
 - **Screenshot:** Not captured.
+
+- **Date / tool / model:** 2026-11-12 / Copilot SDK in VS Code / model not recorded
+- **Feature:** Docker packaging
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** "can you make me a dockerfile on this"
+- **What was wrong with the result:** Not applicable; initial implementation.
+- **Refined prompt:** None.
+- **Validation prompt:** None.
+- **Debug prompt:** None.
+- **Result:** Added a PHP 8.3 Apache Dockerfile, build-context exclusions, and README instructions for configuring the app key, persisting SQLite data, migrating, and running the container.
+- **Screenshot:** Not captured.
 - **Screenshot:** Not captured.
 
 - **Date / tool / model:** 2026-11-11 / Copilot SDK in VS Code / model not recorded
@@ -150,4 +161,15 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Validation prompt:** No separate validation prompt; added tests for first login, required password change, student-only data, and staff/API access restrictions.
 - **Debug prompt:** None.
 - **Result:** Added staff/admin versus student login choices, student-account support, scoped student dashboard/enrollment pages, and role-based navigation. Applied the student-link migration to the configured SQLite database. Student screens use existing SIMS data rather than copying template assets.
+- **Screenshot:** Not captured.
+
+## Feature entry: Events and academic sessions
+
+- **Date / tool / model:** 2026-11-12 / Codex desktop / GPT-6
+- **Feature:** School events and academic session overview
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** "im a student, our trainor just give me a list brief to make our student system, the instructions is on my desktop folder name project, while my project is on my visual code and its open now, and its call sims, can you check and enhance it if theres anything it can enhance. also i want the idea of dashboard on this site https://preskool.dreamstechnologies.com/html/, the dashboard, student and event the classes and sesion, i will authorize you to edit and enhance my sims"
+- **Follow-up:** "go ahead"
+- **Result:** Added a role-aware event calendar and admin event editing, upcoming event panels on admin and student dashboards, and a session overview based on existing school-year/semester enrollment values. Renamed the subject navigation label to Classes & subjects.
+- **Validation:** Applied the events migration to local SQLite; php artisan test passed (50 tests, 267 assertions). Manual browser review remains to be done.
 - **Screenshot:** Not captured.

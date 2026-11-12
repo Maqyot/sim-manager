@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Enrollment;
+use App\Models\Event;
 use App\Models\Student;
 use App\Models\Subject;
 use Illuminate\View\View;
@@ -18,6 +19,7 @@ class DashboardController extends Controller
             'statusCounts' => Enrollment::selectRaw('status, count(*) as total')->groupBy('status')->pluck('total', 'status'),
             'courseCounts' => Student::selectRaw('course, count(*) as total')->groupBy('course')->orderByDesc('total')->pluck('total', 'course'),
             'recentEnrollments' => Enrollment::with(['student', 'subject'])->latest()->take(5)->get(),
+            'upcomingEvents' => Event::where('starts_at', '>=', now())->orderBy('starts_at')->take(4)->get(),
         ]);
     }
 }
