@@ -173,3 +173,13 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Result:** Added a role-aware event calendar and admin event editing, upcoming event panels on admin and student dashboards, and a session overview based on existing school-year/semester enrollment values. Renamed the subject navigation label to Classes & subjects.
 - **Validation:** Applied the events migration to local SQLite; php artisan test passed (50 tests, 267 assertions). Manual browser review remains to be done.
 - **Screenshot:** Not captured.
+- **Date / tool / model:** 2026-11-12 / Codex desktop / GPT-6
+- **Feature:** Production dashboard resilience when the events migration is missing
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** "please fix it"
+- **What was wrong with the result:** The Wasmer SQLite package did not contain the `events` table; the authenticated dashboard failed on its upcoming-events query.
+- **Refined prompt:** User provided admin login to reproduce the signed-in failure.
+- **Validation prompt:** None.
+- **Debug prompt:** `SQLSTATE[HY000]: General error: 1 no such table: events` from Wasmer stderr.
+- **Result:** Added a schema check to admin and student dashboard event queries, returning an empty event list when the table is absent; configured the Wasmer Composer build hook to run migrations with `--force`.
+- **Screenshot:** Not captured; Wasmer deployment v10 is active. Authenticated browser verification was interrupted by the computer-use safety policy.
