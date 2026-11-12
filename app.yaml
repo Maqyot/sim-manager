@@ -2,6 +2,9 @@ kind: wasmer.io/App.v0
 owner: maqyot
 name: sim-manager
 package: .
+env:
+  LOG_CHANNEL: stderr
+  LOG_LEVEL: error
 jobs:
   - name: migrate-laravel
     trigger: post-deployment
