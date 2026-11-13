@@ -231,9 +231,9 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Agent role used:** Primary assistant; no subagent
 - **Initial prompt:** “just remove the password for registration for student, coz the password it login is their course and update the database both github an wasmer”
 - **What was wrong with the result:** Student registration required students to choose and confirm a password, while the requested login credential is the course on the student record.
-- **Refined prompt:** Existing student account hashes must also be updated, and the student login screen should explain the course password.
+- **Refined prompt:** Existing student account hashes must also be updated. On the student login screen, show the label “Password” and the note “Use the password the admin was given.”
 - **Validation prompt:** None.
 - **Debug prompt:** None.
 - **Result:** Removed registration password inputs/validation; new student accounts use their course as the login password. Added an additive data migration for existing student accounts and kept the stored value hashed. Updating a student's course also updates the linked portal password. Documented the credential policy and its limitations.
-- **Validation:** The data migration is applied locally (`php artisan migrate:status`); `php artisan test` passed (50 tests, 273 assertions); `php artisan view:cache` and `git diff --check` passed. Wasmer deployment was not performed.
+- **Validation:** The data migration is applied locally (`php artisan migrate:status`); the full `php artisan test` suite passed (50 tests, 273 assertions), and the focused student portal suite passed after the login-text update (4 tests, 55 assertions). `php artisan view:cache` and `git diff --check` passed. Wasmer deployment was not performed.
 - **Screenshot:** Not captured.

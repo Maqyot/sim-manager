@@ -29,9 +29,9 @@
                         @error('student_number')<div class="invalid-feedback">{{ $message }}</div>@enderror
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">{{ $loginType === 'student' ? 'Course (password)' : 'Password' }}</label>
+                        <label for="password" class="form-label">Password</label>
                         <input id="password" type="password" name="password" autocomplete="current-password" class="form-control @error('password') is-invalid @enderror">
-                        @if ($loginType === 'student')<div class="form-text">Use the exact course / program on your student record.</div>@endif
+                        @if ($loginType === 'student')<div class="form-text">Use the password the admin was given</div>@endif
                         @error('password')<div class="invalid-feedback">{{ $message }}</div>@enderror
                     </div>
                     <div class="form-check mb-3">

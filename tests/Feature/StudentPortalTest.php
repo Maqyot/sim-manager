@@ -90,6 +90,12 @@ class StudentPortalTest extends TestCase
         $student = $this->student('taylor@school.test', '2026-5001');
         $user = $this->studentUser($student);
 
+        $this->get(route('login', ['account_type' => 'student']))
+            ->assertOk()
+            ->assertSee('<label for="password" class="form-label">Password</label>', false)
+            ->assertDontSee('Course (password)')
+            ->assertSee('Use the password the admin was given');
+
         $this->from(route('login'))
             ->post(route('login'), [
                 'student_number' => $student->student_number,
