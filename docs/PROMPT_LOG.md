@@ -223,3 +223,17 @@ Record real prompts only. One entry per feature. Add a screenshot filename for e
 - **Result:** Added student registration with profile/password validation, pending approval state, a dashboard queue visible only to admins, and an approve action. Student login now rejects pending accounts. Existing student records can register by matching their stored details. Staff registration remains separate.
 - **Validation:** PHP lint passed for edited PHP files; the approval migration ran locally; Blade template compilation succeeded. Browser checks and the feature test suite remain to be run.
 - **Screenshot:** Not captured.
+
+## Feature entry: Course-based student login password
+
+- **Date / tool / model:** 2026-11-13 / Codex desktop / GPT-6
+- **Feature:** Remove the password fields from student registration and use the student's course as the login password
+- **Agent role used:** Primary assistant; no subagent
+- **Initial prompt:** “just remove the password for registration for student, coz the password it login is their course and update the database both github an wasmer”
+- **What was wrong with the result:** Student registration required students to choose and confirm a password, while the requested login credential is the course on the student record.
+- **Refined prompt:** Existing student account hashes must also be updated, and the student login screen should explain the course password.
+- **Validation prompt:** None.
+- **Debug prompt:** None.
+- **Result:** Removed registration password inputs/validation; new student accounts use their course as the login password. Added an additive data migration for existing student accounts and kept the stored value hashed. Updating a student's course also updates the linked portal password. Documented the credential policy and its limitations.
+- **Validation:** The data migration is applied locally (`php artisan migrate:status`); `php artisan test` passed (50 tests, 273 assertions); `php artisan view:cache` and `git diff --check` passed. Wasmer deployment was not performed.
+- **Screenshot:** Not captured.

@@ -7,6 +7,7 @@ use App\Models\Student;
 use App\Models\Subject;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
 class StudentPortalTest extends TestCase
@@ -36,24 +37,39 @@ class StudentPortalTest extends TestCase
         ]);
     }
 
-    public function test_first_student_login_uses_student_number_and_course_and_opens_dashboard(): void
+    public function test_student_can_register_without_password_and_log_in_with_course_after_approval(): void
     {
-        $student = $this->student('taylor@school.test', '2026-5001');
-
-        $this->get(route('login'))
+        $this->get(route('student.register'))
             ->assertOk()
-            ->assertDontSee('First student login?')
-            ->assertSee('Student number')
-            ->assertSee('id="staff-login-help"', false);
+            ->assertDontSee('name="password"', false)
+            ->assertDontSee('name="password_confirmation"', false);
 
-        $this->from(route('login'))
-            ->post(route('login'), [
-                'account_type' => 'student',
-                'student_number' => 'not-a-student',
-                'password' => 'BSIT',
-            ])
-            ->assertRedirect(route('login'))
-            ->assertSessionHasErrors('student_number');
+        $this->post(route('student.register.store'), [
+            'student_number' => '2026-5001',
+            'first_name' => 'Taylor',
+            'last_name' => 'Student',
+            'email' => 'taylor@school.test',
+            'course' => 'BSIT',
+            'year_level' => 2,
+        ])->assertRedirect(route('login', ['account_type' => 'student']));
+
+        $student = Student::where('student_number', '2026-5001')->firstOrFail();
+        $user = User::where('student_id', $student->id)->firstOrFail();
+        $this->assertFalse($user->is_approved);
+        $this->assertTrue(Hash::check('BSIT', $user->password));
+
+        $this->post(route('login'), [
+            'account_type' => 'student',
+            'student_number' => $student->student_number,
+            'password' => $student->course,
+        ])->assertRedirect(route('student.register'));
+        $this->assertGuest();
+
+        $admin = User::factory()->create(['role' => User::ROLE_ADMIN]);
+        $this->actingAs($admin)
+            ->post(route('admin.student-registrations.approve', $user))
+            ->assertRedirect(route('dashboard'));
+        $this->post(route('logout'))->assertRedirect(route('login'));
 
         $this->post(route('login'), [
             'account_type' => 'student',
@@ -61,7 +77,6 @@ class StudentPortalTest extends TestCase
             'password' => $student->course,
         ])->assertRedirect(route('student.dashboard'));
 
-        $user = User::where('student_id', $student->id)->firstOrFail();
         $this->assertSame(User::ROLE_STUDENT, $user->role);
         $this->assertAuthenticatedAs($user);
 

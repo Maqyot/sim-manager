@@ -38,7 +38,7 @@ AI suggestions were checked against existing routes, stored data, role boundarie
 
 ### Student registration and approval update
 
-The latest change adds a student registration form and a pending state. The admin dashboard displays pending accounts for administrators, and student login checks approval before opening the portal. Existing student records can register by matching their stored profile. The approval migration was applied locally and Blade compilation succeeded. I have not yet checked the flow in a browser or run feature tests, so those results must be added after I verify them.
+Student registration creates a pending account without asking the student to choose a password. After approval, the student signs in with their student number and the course on their record as the password. A migration updates existing student account hashes, and a course edit syncs the linked login password. The local migration and registration/approval/login flow were verified, and the full test suite passed (50 tests, 273 assertions). This is easy to remember but course names are predictable, so it is a weak credential policy; the admin approval gate remains required. Deployment still needs to be verified before submitting this reflection.
 ## 6. Challenges and lessons learned
 
 The main challenge recorded in this project was that local and deployed environments can differ: a local migration can be complete while the deployed SQLite package still lacks a newer table. Exact production error logs helped narrow that problem. Another lesson is that a polished interface must still use real project data and preserve role checks.

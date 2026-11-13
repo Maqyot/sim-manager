@@ -34,7 +34,6 @@ class StudentRegistrationRequest extends FormRequest
             'email' => ['required', 'email', 'max:255', $studentEmail, Rule::unique('users', 'email')],
             'course' => ['required', 'string', 'max:100'],
             'year_level' => ['required', 'integer', 'between:1,6'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
         ];
     }
 

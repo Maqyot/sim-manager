@@ -8,6 +8,7 @@ use App\Models\Student;
 use Carbon\CarbonImmutable;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 
 class StudentController extends Controller
@@ -89,7 +90,16 @@ class StudentController extends Controller
 
     public function update(StudentRequest $request, Student $student): RedirectResponse
     {
-        $student->update($request->validated());
+        $data = $request->validated();
+        $courseChanged = $student->course !== $data['course'];
+
+        DB::transaction(function () use ($student, $data, $courseChanged): void {
+            $student->update($data);
+
+            if ($courseChanged && $student->user) {
+                $student->user->update(['password' => $student->course]);
+            }
+        });
 
         return redirect()->route('students.index')->with('success', 'Student updated.');
     }

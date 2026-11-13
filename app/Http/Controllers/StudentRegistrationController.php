@@ -35,7 +35,7 @@ class StudentRegistrationController extends Controller
             User::create([
                 'name' => $student->full_name,
                 'email' => $student->email,
-                'password' => $data['password'],
+                'password' => $student->course,
                 'role' => User::ROLE_STUDENT,
                 'student_id' => $student->id,
                 'is_approved' => false,

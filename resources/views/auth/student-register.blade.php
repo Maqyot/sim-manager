@@ -8,7 +8,7 @@
                 <div class="mb-4">
                     <span class="badge text-bg-primary-subtle text-primary mb-2">Student portal</span>
                     <h1 class="h3 mb-2">Student registration</h1>
-                    <p class="text-body-secondary mb-0">Submit your details to request a student account. An administrator must approve it before your first login.</p>
+                    <p class="text-body-secondary mb-0">Submit your details to request a student account. After an administrator approves it, sign in with your student number and course as your password.</p>
                 </div>
                 <form method="POST" action="{{ route('student.register.store') }}" novalidate>
                     @csrf
@@ -30,13 +30,6 @@
                             </select>
                             @error('year_level')<div class="invalid-feedback">{{ $message }}</div>@enderror
                         </div>
-                        @foreach ([['password', 'Password (at least 8 characters)'], ['password_confirmation', 'Confirm password']] as [$field, $label])
-                            <div class="col-md-6">
-                                <label for="{{ $field }}" class="form-label">{{ $label }}</label>
-                                <input id="{{ $field }}" type="password" name="{{ $field }}" class="form-control @error('password') is-invalid @enderror" autocomplete="{{ $field === 'password' ? 'new-password' : 'new-password' }}" required>
-                                @error('password')<div class="invalid-feedback">{{ $message }}</div>@enderror
-                            </div>
-                        @endforeach
                     </div>
                     <div class="d-grid mt-4">
                         <button class="btn btn-primary">Submit registration</button>
